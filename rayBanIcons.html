@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+
+<title>RayBan-Icons</title>
+</head>
+
+<body>
+<div class="container intro">
+  <p> <span> INTRO </span><br><br>The book features more than 50 photographs that capture the spirit and influence of the most iconic worldwide eyewear brand. Ray-Ban. These rare photographs of some of most iconic musicians,
+      artists, influencers and pioneers showcase how the brand has spontaneously been at the forefront of style and culture since its debut in 1937 and keep continuing to being top of mind of the most iconic personalities all over the world.
+      A picture, the saying goes, speaks a thousand words.The images reveal the special connection between the brand and some key personalities that have the courage to be themselves. That courage that is not the absence of fear, but the triumph over it, that is not just physical bravery but is what pushes people to face their fears and to go beyond their limits.
+      The protagonists of these shots are people that are being courageous, because they have the courage to take decisions or to stand up for what is right, to act in accordance with their beliefs, in spite of criticism, thus fighting against the society and its stereotypes, they go beyond their limits and are brave to express and expose themselves, their talents, their emotions
+  </p>
+</div>
+<nav class="container"> RAYBAN </nav>
+<div class="container imgContainer" > <img class="logo"src="images/logo.png" > </div>
+<div class="testim container">
+    <a class="testDetail" href="#mainBody1">Elle King</a>
+    <a class="testDetail" href="#mainBody2">Francesco Corazzini</a>
+    <a class="testDetail"href="#">Jamie Clayton</a>
+    <a class="testDetail" href="#">Joe Jebbia</a>
+    <a class="testDetail" href="#">Simon Hammerstein</a>
+    <a class="testDetail" href="#">Sophia Amoruso</a>
+    <a class="testDetail"href="#">Zoe Kravits</a>
+  </div>
+  <div class="container downArrowContainer"> <img class="downArrow" src="icons/down-arrow.png"> </div>
+  <div class="container imgContainer"> <img class="imageB"src="images/elle_king/elleb.png"> </div>
+<div class="container mainBody" id="mainBody1">
+   <img class="imageLeft" id="trigg1"src="images/elle_king/elle_bio.jpg" data-index="1">
+   <img class="imageRight" id="trigg2" src="images/elle_king/elle_claim.png">
+   <div class="description1">
+     <img class="close" alt="1"src="icons/close.png">
+     <div class="owl-carousel owl-theme owl-loaded">
+       <div class="owl-stage-outer">
+        <div class="owl-stage">
+            <div class="owl-item" data-img="images/elle_king/1.jpg" data-desc="1"> <img src="images/elle_king/1.jpg"></div>
+            <div class="owl-item" data-img="images/elle_king/2.jpg" data-desc="1"> <img src="images/elle_king/2.jpg"></div>
+            <div class="owl-item" data-img="images/elle_king/3.jpg" data-desc="1"> <img src="images/elle_king/3.jpg"></div>
+            <div class="owl-item" data-img="images/elle_king/4.jpg" data-desc="1"> <img src="images/elle_king/4.jpg"></div>
+            <div class="owl-item" data-img="images/elle_king/5.jpg" data-desc="1"> <img src="images/elle_king/5.jpg"></div>
+        </div>
+    </div>
+    </div>
+     <div class="text">
+       <p>Elle King is the President of The Box and managing partner of Variety Worldwide LLC., with venues in New York City’s Lower East Side, London’s Soho and Dubai. With the success of The Box, Hammerstein has revived the tradition of variety theater which had been lost for nearly a century. ​Hammerstein sits on the Board of Directors for Only Make Believe, a non-profit organization that provides theatrical workshops to children living with chronic illnesses and disabilities. Additionally, he has produced and directed shows for clients such as Simon Cowell, MTV, Philip Green, Monaco Grand Prix, Prada Shanghai, Bloomberg, El Lio Ibiza, Art Basel, Belvedere, The VMAs, Sting, Duran Duran, GQ Moscow, Phillips De Pury, Marc Jacobs, Istanbul Royal Palace, Vivian Westwood, Another Magazine, Andre Balazs, Roberto Cavalli, and John McEnroe.​Over one million people have seen Hammerstein’s live shows, and he has been profiled in publications such as Vogue, Vanity Fair, The New York Times, and New York Magazine. Hammerstein’s latest venture will be a new immersive magic dinner show called The King of Hearts which will premiere in the fall at his new venue on 57th st. Hammerstein won the Drama Desk award last year for Queen of the Night in the unique theatrical production category.
+       </p>
+     </div>
+       <video class="video" controls>
+            <source src="video/1.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+ </div>
+</div>
+
+<div class="container mainBody" id="mainBody2">
+   <img class="imageLeft"  id="trigg3" src="images/fra_carr/fra_bio.jpg">
+   <img class="imageRight" id="trigg4" src="images/fra_carr/fra_claim.png">
+</div>
+<div class="mainBody">  terza </div>
+
+
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/ScrollMagic.min.js"></script>
+<script src="js/main.js"></script>
+
+
+<script>
+//ELLE TESTIMONIAL
+  var controller = new ScrollMagic.Controller();
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement : ('#mainBody1')
+  })
+  .setClassToggle('#trigg1', 'showL')
+  .addTo(controller);
+
+  var controller = new ScrollMagic.Controller();
+  var scene = new ScrollMagic.Scene({
+    triggerElement : ('#mainBody1')
+  })
+  .setClassToggle('#trigg2', 'showR')
+  .addTo(controller);
+
+  //FRANCESCO TESTIMONIAL
+
+  var controller = new ScrollMagic.Controller();
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement : '#mainBody2'
+  })
+  .setClassToggle('#trigg3', 'showL')
+  .addTo(controller);
+
+  var controller = new ScrollMagic.Controller();
+  var scene = new ScrollMagic.Scene({
+    triggerElement : '#mainBody2'
+  })
+  .setClassToggle('#trigg4', 'showR')
+  .addTo(controller);
+</script>
+</body>
+
+</html>
